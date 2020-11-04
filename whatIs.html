@@ -38,8 +38,12 @@
         </ul>
     </div>
 </nav>
-<h1>This is an IS 117 Project</h1>
-
+<h1>What is Virtualization and Containerization?</h1>
+<h2>Virtualization vs. Containerization </h2>
+<p>Virtualization is creating a virtual version of something instead of an actual/physical version of something.  Computer hardware virtualization involves dividing a single host machine into multiple virtual machines (VMs) to split the hardware resources between different guest operating systems (OSs).  The host computer runs its host OS and employs a software called Hypervisor to create the VMs that each have their guest OS.  This software provides more efficient use of the hardware resulting in a lower cost of ownership for the underlying infrastructure.</p>
+<p>Computer hardware virtualization also allows a snapshot to be taken of the state of the VM which can then be used for migrating the VM to a different host or restoring the VM to a previous stable condition in the case of a failure.  The drawbacks to virtualization are the inherent instability and extended start-up time for the host machine running multiple VMs, as well as Hypervisor’s reduced efficiency compared to the host OS.</p>
+<p>Containerization takes Virtualization to the next stage with an abstraction of the OS, which means masking all unnecessary details and revealing only data relevant to the application to streamline processing.  The guest OS used in VM’s is unnecessary because containers share the host OS and only require the binaries and libraries specific to their applications.  Separate libraries ensure that the different containers will not interfere with each other.Resources are only shared between containers when necessary resulting in increased performance and stability.</p>
+<p>Many copies of a container can operate simultaneously, performing the same operation, which provides robust failover capabilities.  Removing and replacing one of the copies is a seamless process with no effect on the overall function.  Containers are much more scalable than VMs because they only contain the most basic services for the required functionality.</p>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
